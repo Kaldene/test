@@ -4,6 +4,8 @@ import pytest
 
 from calculator import add, divide, multiply, subtract
 
+def test_add():
+    assert add(2, 3) == 6
 
 def test_add_positive_numbers() -> None:
     assert add(2, 3) == 5
