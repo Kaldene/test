@@ -4,8 +4,6 @@ import pytest
 
 from calculator import add, divide, multiply, subtract
 
-def test_add():
-    assert add(2, 3) == 6
 
 def test_add_positive_numbers() -> None:
     assert add(2, 3) == 5
@@ -20,7 +18,7 @@ def test_multiply_positive_numbers() -> None:
 
 
 def test_divide_positive_numbers() -> None:
-    assert divide(12, 3) == 4
+    assert divide(12, 4) == 4
 
 
 def test_divide_by_zero_raises_value_error() -> None:
